@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text hover</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+        *{
+            margin: 0;
+            text-align: center;
+            background-color: black;
+        }
+        p{
+            margin-top: 50vh;
+            font-size: 32px;
+            color: white;
+            font-family: 'poppins';
+        }
+        .learning{
+            background-color: rgb(89, 216, 208) ;
+            border:none;
+        }
+        .learn{
+            display: none ; 
+            background-color: rgb(226, 112, 195);
+        }
+        .learning:hover + .learn {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div id="quote">
+        <p>A happy life is one spent in <span class="learning">learning</span><span class="learn"> learn,</span> earning, and yearning.</p>
+    </div>
+</body>
+</html>
+
+
